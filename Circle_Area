@@ -1,0 +1,21 @@
+//Konsoldan gelen yarıçap değerini alacağız.
+
+//Terminalden gelen veriler string olarak gelir, hesaplama yapabilmek için Number() ile int e çeviriyoruz.
+
+const radius = Number(process.argv[2]);
+
+//Dairenin alanını hesaplıyoruz
+
+// Formül =>  π x r2 
+
+//Math.PI bize 3,1415... sayısını veriyor.
+
+//Math.pow(radius, 2) ise yarıçapın karesini alıyor
+
+const area = Math.PI * Math.pow(radius, 2);
+
+// Konola bunu yazdırıyoruz.
+
+console.log(`Yarıçapı ${radius} olan dairenin alanı: ${area.toFixed(2)}`);
+
+
